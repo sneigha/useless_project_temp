@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>camera moment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700;800&family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="camera-body">
+    <main class="camera-wrap">
+      <div class="camera-box">
+        <div class="camera-topbar">
+          <span>live</span>
+          <span>cam • 480p</span>
+        </div>
+
+        <div class="camera-screen" aria-live="polite">
+          <video id="cameraFeed" autoplay playsinline muted></video>
+          <div class="camera-guide">
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+
+        <div class="camera-status" aria-live="polite">
+          <div class="status-line buffering">buffering...</div>
+          <div class="status-line ouiii hidden">ouiii</div>
+          <div class="status-line processing hidden">processing...</div>
+          <div class="status-line thinking hidden">thinking like Einstein</div>
+        </div>
+
+        <div class="question-popup hidden" id="questionPopup">
+          <div class="question-text">does your toothpaste contain himalayan salt?</div>
+          <div class="popup-options">
+            <button type="button" class="mini-btn yes-btn">yes</button>
+            <button type="button" class="mini-btn no-btn">no</button>
+            <a href="index.html" class="mini-btn go-back-btn">back to square one</a>
+          </div>
+        </div>
+
+        <div class="camera-actions">
+          <button class="capture-btn" type="button">cheese</button>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
