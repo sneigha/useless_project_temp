@@ -47,7 +47,7 @@ http://localhost:8000/
 For Software:
 
 # Screenshots (Add at least 3)
-![Landing Page](index.png)
+![Landing Page](index.jpeg)
 *The landing screen with the absurd “ith thengayalla!” title and playful checkerboard background.*
 
 ![Camera Flow](camera.jpeg)
