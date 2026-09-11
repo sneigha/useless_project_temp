@@ -1,4 +1,4 @@
-﻿const cameraFeed = document.getElementById('cameraFeed');
+const cameraFeed = document.getElementById('cameraFeed');
 
 if (cameraFeed) {
   if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
@@ -31,6 +31,7 @@ if (cameraFeed) {
 const cameraButton = document.querySelector('.capture-btn');
 const questionPopup = document.getElementById('questionPopup');
 const popupButtons = document.querySelectorAll('.popup-options .mini-btn');
+const capturedPreview = document.getElementById('capturedPreview');
 
 const absurdQuestions = [
   'does your toothpaste contain himalayan salt?',
@@ -88,15 +89,19 @@ if (cameraButton) {
   cameraButton.addEventListener('click', () => {
     if (cameraButton.disabled) return;
 
-    if (cameraFeed && cameraFeed.videoWidth) {
-      const canvas = document.createElement('canvas');
-      canvas.width = cameraFeed.videoWidth;
-      canvas.height = cameraFeed.videoHeight;
-      const context = canvas.getContext('2d');
-      context.drawImage(cameraFeed, 0, 0, canvas.width, canvas.height);
-      const snapshot = canvas.toDataURL('image/png');
-      sessionStorage.setItem('ith-thengayalla-snapshot', snapshot);
-    } else {
+    try {
+      if (cameraFeed && cameraFeed.readyState >= 2 && cameraFeed.videoWidth && cameraFeed.videoHeight) {
+        const canvas = document.createElement('canvas');
+        canvas.width = cameraFeed.videoWidth;
+        canvas.height = cameraFeed.videoHeight;
+        const context = canvas.getContext('2d');
+        context.drawImage(cameraFeed, 0, 0, canvas.width, canvas.height);
+        const snapshot = canvas.toDataURL('image/png');
+        sessionStorage.setItem('ith-thengayalla-snapshot', snapshot);
+      } else {
+        sessionStorage.setItem('ith-thengayalla-snapshot', 'fallback');
+      }
+    } catch (error) {
       sessionStorage.setItem('ith-thengayalla-snapshot', 'fallback');
     }
 
@@ -124,4 +129,15 @@ if (resultTitle) {
 
   const chosen = resultStyles[Math.floor(Math.random() * resultStyles.length)];
   resultTitle.textContent = chosen;
+
+  if (capturedPreview) {
+    const snapshot = sessionStorage.getItem('ith-thengayalla-snapshot');
+    if (snapshot && snapshot !== 'fallback') {
+      capturedPreview.src = snapshot;
+      capturedPreview.style.display = 'block';
+    } else {
+      capturedPreview.src = '';
+      capturedPreview.style.display = 'none';
+    }
+  }
 }
