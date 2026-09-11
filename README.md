@@ -1,84 +1,64 @@
-<img width="1280" height="640" alt="git (1)" src="https://github.com/user-attachments/assets/8920b256-2ba8-4988-b824-5351134eb4bd" />
+# Ith thengayalla!
 
-
-
-# Ith thengayalla
-
-
-## Basic Details
-### Team Name: [Name]
-
+### Team Name: Joel n Sneha
 
 ### Team Members
-- Team Lead: [Name] - [College]
-- Member 2: [Name] - [College]
-- Member 3: [Name] - [College]
+- Member 1: Joel Antony - ICCS College of Engineering and Management
+- Member 2: Sneha Nilesh Parab - ICCS College of Engineering and Management
 
 ### Project Description
-[2-3 lines about what your project does]
+Ith thengayalla! is a deliberately useless web experience built around absurdity, deadpan comedy, and fake AI energy. It mimics a modern camera-based decision system but produces nonsense instead of actual insight.
 
 ### The Problem (that doesn't exist)
-[What ridiculous problem are you solving?]
+The world was suffering from a severe lack of pointless but highly entertaining digital chaos. People needed a tool that looked advanced, sounded smart, and solved absolutely nothing.
 
 ### The Solution (that nobody asked for)
-[How are you solving it? Keep it fun!]
+We built a tiny static microsite where the user clicks a fake camera, waits through absurd processing screens, answers a yes/no question, and receives a completely random nonsense result. It is equal parts satire, confusion, and wholesome nonsense.
 
 ## Technical Details
 ### Technologies/Components Used
 For Software:
-- [Languages used]
-- [Frameworks used]
-- [Libraries used]
-- [Tools used]
+- HTML
+- CSS
+- JavaScript
+- GitHub Pages for hosting
+- Browser camera API for the fake live capture flow
 
 For Hardware:
-- [List main components]
-- [List specifications]
-- [List tools required]
+- No dedicated hardware required
+- Works on any device with a webcam and browser support
 
 ### Implementation
 For Software:
 # Installation
-[commands]
+```bash
+cd C:\Users\SANDHYA\Documents\absurd-project
+python -m http.server 8000
+```
 
 # Run
-[commands]
+Open the project in a browser at:
+
+```text
+http://localhost:8000/
+```
 
 ### Project Documentation
 For Software:
 
 # Screenshots (Add at least 3)
-![Screenshot1](Add screenshot 1 here with proper name)
-*Add caption explaining what this shows*
+![Landing Page](index.png)
+*The landing screen with the absurd “ith thengayalla!” title and playful checkerboard background.*
 
-![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
+![Camera Flow](camera.jpeg)
+*The fake camera interface with live preview, processing states, and absurd yes/no prompt.*
 
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
+![Result Page](result.jpeg)
+*The final nonsense result delivered in a short, gloriously useless style.*
 
 # Diagrams
-![Workflow](Add your workflow/architecture diagram here)
-*Add caption explaining your workflow*
-
-For Hardware:
-
-# Schematic & Circuit
-![Circuit](Add your circuit diagram here)
-*Add caption explaining connections*
-
-![Schematic](Add your schematic diagram here)
-*Add caption explaining the schematic*
-
-# Build Photos
-![Components](Add photo of your components here)
-*List out all components shown*
-
-![Build](Add photos of build process here)
-*Explain the build steps*
-
-![Final](Add photo of final product here)
-*Explain the final build*
+![Workflow](workflow.jpeg)
+*The user flow: landing page → camera → processing → yes/no question → random result.*
 
 ### Project Demo
 # Video
@@ -89,15 +69,12 @@ For Hardware:
 [Add any extra demo materials/links]
 
 ## Team Contributions
-- [Name 1]: [Specific contributions]
-- [Name 2]: [Specific contributions]
-- [Name 3]: [Specific contributions]
+- [Name 1]: Designed the landing page, visual identity, and overall absurd aesthetic.
+- [Name 2]: Implemented the camera flow, fake processing states, and JavaScript logic.
+- [Name 3]: Worked on styling, final polish, and deployment preparation.
 
 ---
 Made with ❤️ at TinkerHub Useless Projects 
 
 ![Static Badge](https://img.shields.io/badge/TinkerHub-24?color=%23000000&link=https%3A%2F%2Fwww.tinkerhub.org%2F)
 ![Static Badge](https://img.shields.io/badge/UselessProjects--26-26?link=https%3A%2F%2Ftinkerhub.org%2Fevents%2F1M8ORET9A1%2Fuseless-projects-3.0)
-
-
-
