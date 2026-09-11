@@ -46,7 +46,7 @@ http://localhost:8000/
 ### Project Documentation
 For Software:
 
-# Screenshots (Add at least 3)
+# Screenshots
 ![Landing Page](index.jpeg)
 *The landing screen with the absurd “ith thengayalla!” title and playful checkerboard background.*
 
