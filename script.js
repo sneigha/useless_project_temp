@@ -32,6 +32,7 @@ const cameraButton = document.querySelector('.capture-btn');
 const questionPopup = document.getElementById('questionPopup');
 const popupButtons = document.querySelectorAll('.popup-options .mini-btn');
 const capturedPreview = document.getElementById('capturedPreview');
+const cameraFlash = document.getElementById('cameraFlash');
 
 const absurdQuestions = [
   'does your toothpaste contain himalayan salt?',
@@ -88,6 +89,12 @@ if (cameraButton) {
 
   cameraButton.addEventListener('click', () => {
     if (cameraButton.disabled) return;
+
+    if (cameraFlash) {
+      cameraFlash.classList.remove('active');
+      void cameraFlash.offsetWidth;
+      cameraFlash.classList.add('active');
+    }
 
     try {
       if (cameraFeed && cameraFeed.readyState >= 2 && cameraFeed.videoWidth && cameraFeed.videoHeight) {
