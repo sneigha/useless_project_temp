@@ -2,7 +2,7 @@
 
 
 
-# [Project Name] 🎯
+# Ith thengayalla
 
 
 ## Basic Details
