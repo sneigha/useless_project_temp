@@ -69,9 +69,8 @@ For Software:
 [Add any extra demo materials/links]
 
 ## Team Contributions
-- [Name 1]: Designed the landing page, visual identity, and overall absurd aesthetic.
-- [Name 2]: Implemented the camera flow, fake processing states, and JavaScript logic.
-- [Name 3]: Worked on styling, final polish, and deployment preparation.
+- Joel Antony: Idea pitching, Designed the landing page, visual identity,Implemented the fake processing states, and overall absurd aesthetic.
+- Sneha Nilesh Parab: Worked on styling, final polish, and deployment preparation. and JavaScript logic
 
 ---
 Made with ❤️ at TinkerHub Useless Projects 
